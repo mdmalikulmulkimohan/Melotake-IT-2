@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNirban - ক্যারিয়ারের নতুন দিগন্ত</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">TechNirban</div>
+        </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        <div class="floating-element element-4"></div>
+    </div>
+
+    <!-- Cursor Effect -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>TechNirban</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">হোম</a></li>
+                    <li><a href="#about" class="nav-link">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#positions" class="nav-link">খোলা পদসমূহ</a></li>
+                    <li><a href="#process" class="nav-link">নিয়োগ প্রক্রিয়া</a></li>
+                    <li><a href="#benefits" class="nav-link">সুবিধাসমূহ</a></li>
+                    <li><a href="#apply" class="nav-link">আবেদন করুন</a></li>
+                    <li><a href="#contact" class="nav-link">যোগাযোগ</a></li>
+                </ul>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="mobile-menu" id="mobileMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="hero-title">
+                        <span class="title-line">আপনার ক্যারিয়ারের</span>
+                        <span class="title-line accent">পরবর্তী অধ্যায় শুরু হোক</span>
+                        <span class="title-line">TechNirban এ</span>
+                    </h1>
+                    <p class="hero-description">দক্ষতা, উদ্ভাবন এবং সাফল্যের সমন্বয়ে গড়ে উঠেছে আমাদের টিম। যোগ দিন আমাদের সাথে এবং আপনার ক্যারিয়ারকে নিয়ে যান নতুন উচ্চতায়।</p>
+                    <div class="hero-buttons">
+                        <a href="#positions" class="btn btn-primary">
+                            <span>পদসমূহ দেখুন</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>আমাদের সম্পর্কে</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="visual-container">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>উন্নয়ন</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>ডিজাইন</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-chart-line"></i>
+                            <span>মার্কেটিং</span>
+                        </div>
+                        <div class="main-visual">
+                            <div class="visual-element"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">সফল নিয়োগ</div>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="800">
+                    <div class="stat-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">চলতি পদ</div>
+                    </div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">আন্তর্জাতিক ক্লায়েন্ট</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">আমাদের সম্পর্কে</span>
+                <h2 class="section-title">কেন TechNirban এ ক্যারিয়ার গড়বেন?</h2>
+                <p class="section-description">আমরা শুধু চাকরি দেই না, গড়ে তুলি ভবিষ্যতের টেক লিডার। আমাদের সাথে যুক্ত হয়ে অভিজ্ঞতা করুন পেশাগত বৃদ্ধির অনন্য সুযোগ।</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-container">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmNWZmIi8+CiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iIzI1NjNlYiIvPgogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjI1MCIgcj0iNjAiIGZpbGw9IiNmNTllMGIiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMwMCIgcj0iNDAiIGZpbGw9IiMzMGEwZmYiIG9wYWNpdHk9IjAuNSIvPgo8L3N2Zz4=" alt="About TechNirban">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>উচ্চ বেতন ও সুবিধা</h3>
+                                <p>শিল্প মানদণ্ডের সাথে সামঞ্জস্যপূর্ণ আকর্ষণীয় বেতন প্যাকেজ এবং সম্পূর্ণ সুবিধা প্যাকেজ।</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>নমনীয় কাজের সময়</h3>
+                                <p>আপনার জীবনযাত্রার সাথে খাপ খাইয়ে নেওয়ার জন্য নমনীয় কাজের সময় এবং দূরবর্তী কাজের বিকল্প।</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>পেশাগত উন্নয়ন</h3>
+                                <p>কর্মক্ষমতা উন্নয়নের জন্য নিয়মিত প্রশিক্ষণ, কর্মশালা এবং শংসাপত্র প্রোগ্রাম।</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#positions" class="btn btn-primary">
+                        <span>বর্তমান পদগুলো দেখুন</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positions Section -->
+    <section class="positions" id="positions">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">ক্যারিয়ার সুযোগ</span>
+                <h2 class="section-title">আমাদের খোলা পদসমূহ</h2>
+                <p class="section-description">আপনার দক্ষতা এবং আগ্রহের সাথে মিলে যায় এমন একটি অবস্থান খুঁজে নিন। আমরা সবসময় প্রতিভাবান পেশাদারদের সন্ধান করি।</p>
+            </div>
+            <div class="positions-filter" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">সব পদ</button>
+                <button class="filter-btn" data-filter="development">ডেভেলপমেন্ট</button>
+                <button class="filter-btn" data-filter="design">ডিজাইন</button>
+                <button class="filter-btn" data-filter="marketing">মার্কেটিং</button>
+                <button class="filter-btn" data-filter="business">ব্যবসা</button>
+            </div>
+            <div class="positions-grid">
+                <!-- Positions will be loaded dynamically by JavaScript -->
+            </div>
+            <div class="positions-cta" data-aos="fade-up">
+                <p>আপনার জন্য উপযুক্ত পদ খুঁজে পাচ্ছেন না? <a href="#contact">আমাদের সাথে যোগাযোগ করুন</a> এবং আমরা আপনার সাথে উপযুক্ত সুযোগ নিয়ে আলোচনা করব।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">আবেদন প্রক্রিয়া</span>
+                <h2 class="section-title">কিভাবে আবেদন করবেন?</h2>
+                <p class="section-description">আমাদের আবেদন প্রক্রিয়া সরল এবং স্বচ্ছ। নিচের ধাপগুলি অনুসরণ করে সহজেই আবেদন করুন।</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="step-title">আবেদন জমা দিন</h3>
+                    <p class="step-description">আমাদের অনলাইন ফর্ম পূরণ করে আবেদন জমা দিন। আপনার জীবনবৃত্তান্ত এবং প্রয়োজনীয় কাগজপত্র সংযুক্ত করতে ভুলবেন না।</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="step-title">স্ক্রিনিং ও মূল্যায়ন</h3>
+                    <p class="step-description">আমাদের ট্যালেন্ট একুইজিশন টিম আপনার আবেদন পর্যালোচনা করবে এবং আপনার দক্ষতা মূল্যায়ন করবে।</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="step-title">সাক্ষাৎকার</h3>
+                    <p class="step-description">আমাদের সাথে একটি সাক্ষাৎকারের জন্য নির্বাচিত হন যেখানে আমরা আপনার অভিজ্ঞতা এবং দক্ষতা নিয়ে আলোচনা করব।</p>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-aos-delay="800">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="step-title">চূড়ান্ত প্রস্তাব</h3>
+                    <p class="step-description">সফল হলে, আপনি আমাদের কাছ থেকে একটি আনুষ্ঠানিক চাকরির প্রস্তাব পাবেন এবং আমাদের দলে যোগদানের জন্য প্রস্তুত হন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">কর্মী সুবিধা</span>
+                <h2 class="section-title">কেন TechNirban এ কাজ করবেন?</h2>
+                <p class="section-description">আমরা আমাদের কর্মীদের কল্যাণ এবং সন্তুষ্টিকে অগ্রাধিকার দিই। আমাদের সুবিধাগুলো দেখুন যা আপনার ক্যারিয়ার এবং ব্যক্তিগত জীবনকে সমৃদ্ধ করবে।</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>স্বাস্থ্য ও ফিটনেস</h3>
+                    <p>জিম সদস্যতা, স্বাস্থ্য বীমা এবং নিয়মিত স্বাস্থ্য চেক-আপ সহ সম্পূর্ণ স্বাস্থ্য সুবিধা প্যাকেজ।</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>খাদ্য ও স্ন্যাকস</h3>
+                    <p>বিনামূল্যে সকালের নাস্তা, দুপুরের খাবার এবং সারা দিন স্বাস্থ্যকর স্ন্যাকসের ব্যবস্থা।</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>ভ্রমণ সুবিধা</h3>
+                    <p>আন্তর্জাতিক কনফারেন্স, প্রশিক্ষণ এবং দলগত ভ্রমণের জন্য ভ্রমণ সুবিধা এবং ভাতা।</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>দূরবর্তী কাজ</h3>
+                    <p>সুবিধাজনক দূরবর্তী কাজের বিকল্প এবং প্রয়োজনীয় সরঞ্জাম ও সহায়তা প্রদান।</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="benefit-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>শিক্ষা সহায়তা</h3>
+                    <p>পেশাগত উন্নয়নের জন্য কোর্স ফি, শংসাপত্র এবং প্রশিক্ষণ প্রোগ্রামের জন্য আর্থিক সহায়তা।</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>ছুটির সময়</h3>
+                    <p>উদার ছুটির নীতি, নমনীয় ছুটি এবং বিশেষ অনুষ্ঠানের জন্য অতিরিক্ত ছুটির সুবিধা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Section -->
+    <section class="application" id="apply">
+        <div class="container">
+            <div class="application-content">
+                <div class="application-text" data-aos="fade-right">
+                    <span class="section-subtitle">আবেদন করুন</span>
+                    <h2 class="section-title">আজই আপনার ক্যারিয়ার শুরু করুন</h2>
+                    <p class="section-description">আমাদের দলে যোগদানের জন্য প্রস্তুত? নিচের ফর্মটি পূরণ করুন এবং আমরা আপনার সাথে শীঘ্রই যোগাযোগ করব।</p>
+                    <div class="application-features">
+                        <div class="app-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>দ্রুত প্রক্রিয়াকরণ</span>
+                        </div>
+                        <div class="app-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>কোন ফি নেই</span>
+                        </div>
+                        <div class="app-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>সুরক্ষিত আবেদন</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="application-form" data-aos="fade-left">
+                    <form id="jobApplicationForm">
+                        <div class="form-group">
+                            <label for="fullName">পুরো নাম *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ইমেইল ঠিকানা *</label>
+                            <input type="email" id="email" name="email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">ফোন নম্বর *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">পদের নাম *</label>
+                            <select id="position" name="position" required>
+                                <option value="">পদ নির্বাচন করুন</option>
+                                <!-- Options will be populated by JavaScript -->
+                            </select>
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="form-group">
+                            <label for="resume">রেজুমি আপলোড *</label>
+                            <div class="file-upload">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                                <label for="resume" class="file-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>ফাইল নির্বাচন করুন</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">সংক্ষিপ্ত পরিচয়</label>
+                            <textarea id="message" name="message" rows="4" placeholder="আপনার দক্ষতা এবং অভিজ্ঞতা সম্পর্কে সংক্ষেপে লিখুন..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>আবেদন জমা দিন</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">যোগাযোগ করুন</span>
+                <h2 class="section-title">আমাদের সাথে যোগাযোগ করুন</h2>
+                <p class="section-description">আমাদের সাথে যোগাযোগ করতে নিচের তথ্য ব্যবহার করুন বা সরাসরি বার্তা পাঠান। আমরা 24 ঘন্টার মধ্যে উত্তর দেব।</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>আমাদের অফিস</h3>
+                            <p>১২৩/ক, বিজয়নগর, ঢাকা-১২১২, বাংলাদেশ</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ফোন নম্বর</h3>
+                            <p>+৮৮০ ১৭১২ ৩৪৫৬৭৮</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ইমেইল ঠিকানা</h3>
+                            <p>career@technirban.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>কাজের সময়</h3>
+                            <p>সোম-শুক্র: সকাল ৯টা - সন্ধ্যা ৬টা</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">আপনার নাম *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">ইমেইল ঠিকানা *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">বিষয় *</label>
+                            <input type="text" id="contactSubject" name="contactSubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">বার্তা *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>বার্তা পাঠান</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>TechNirban</span>
+                    </div>
+                    <p class="footer-description">প্রতিভা, উদ্ভাবন এবং সাফল্যের সমন্বয়ে গড়ে উঠেছে আমাদের সংস্থা। আমরা বিশ্বাস করি প্রতিভাবান ব্যক্তিরাই একটি প্রতিষ্ঠানের সবচেয়ে বড় সম্পদ।</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>দ্রুত লিংক</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">হোম</a></li>
+                        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#positions">খোলা পদসমূহ</a></li>
+                        <li><a href="#process">নিয়োগ প্রক্রিয়া</a></li>
+                        <li><a href="#benefits">কর্মী সুবিধা</a></li>
+                        <li><a href="#contact">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>ক্যারিয়ার</h3>
+                    <ul class="footer-links">
+                        <li><a href="#positions">বর্তমান পদসমূহ</a></li>
+                        <li><a href="#apply">আবেদন করুন</a></li>
+                        <li><a href="#process">আবেদন প্রক্রিয়া</a></li>
+                        <li><a href="#benefits">কর্মী সুবিধা</a></li>
+                        <li><a href="#">ক্যারিয়ার টিপস</a></li>
+                        <li><a href="#">সাফল্যের গল্প</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>নিউজলেটার</h3>
+                    <p>নতুন পদ এবং ক্যারিয়ার সুযোগ সম্পর্কে সবার আগে জানতে সাবস্ক্রাইব করুন।</p>
+                    <form class="newsletter-form">
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="আপনার ইমেইল ঠিকানা" required>
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ২০২৩ TechNirban. সকল স্বত্ব সংরক্ষিত।</p>
+                <div class="footer-links">
+                    <a href="#">গোপনীয়তা নীতি</a>
+                    <a href="#">সেবার শর্তাবলী</a>
+                    <a href="#">কুকি পলিসি</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 class="modal-title">আবেদন সফল!</h2>
+            <p class="modal-message" id="modalMessage">আপনার আবেদনটি সফলভাবে জমা হয়েছে। আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।</p>
+            <button class="btn btn-primary" id="modalClose">ঠিক আছে</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
